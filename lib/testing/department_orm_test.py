@@ -40,6 +40,7 @@ class TestDepartment:
         """
         result = CURSOR.execute(sql_table_names).fetchone()
         assert (result is None)
+        
 
     def test_saves_department(self):
         '''contains method "save()" that saves a Department instance to the db and assigns the instance an id.'''
